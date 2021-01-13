@@ -1,0 +1,24 @@
+{
+  "name": "niagahoster-test",
+  "version": "1.0.0",
+  "description": "Please create new php page from given mockup. Just a single landing page.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss-cli@latest build ./src/style.css -o ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bylabz/frontend-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bylabz/frontend-test/issues"
+  },
+  "homepage": "https://github.com/bylabz/frontend-test#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}

@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover, body {
+    @apply text-black-800;
+}
+
+.ribbon:after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: white;
+}
+
+.bookmarkRibbon {
+    width: 0px;
+    height: 35px;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid #0090ee;
+    border-left: 15px solid #0090ee;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight:700;
+    position: absolute;
+    top: 0px;
+}
+
+.bookmarkRibbon i{
+    position: absolute;
+    right: -8px;
+    top: 5px;
+    @apply text-white text-sm;
+}
+
+
+/* common */
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #00722f;;
+}
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 8px 0;
+    background-color: #02b359;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+    top: -10px;
+    left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.ribbon-top-left::before {
+    top: 0;
+    right: 29px;
+}
+.ribbon-top-left::after {
+    bottom: 29px;
+    left: 0;
+}
+.ribbon-top-left span {
+    right: -10px;
+    top: 25px;
+    transform: rotate(-45deg);
+}
+
